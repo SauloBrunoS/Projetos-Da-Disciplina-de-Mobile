@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "285180063749",
+    "project_id": "fir-authenticationteste",
+    "storage_bucket": "fir-authenticationteste.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285180063749:android:54da54745071aceb086c6c",
+        "android_client_info": {
+          "package_name": "com.example.firebasauthenticationteste"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUwcqaStG3UIL9pesvx_azdS3E4-ysFrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

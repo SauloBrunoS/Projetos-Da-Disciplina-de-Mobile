@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Calculadora">
+
+    <Button
+        android:id="@+id/btn_adicionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:backgroundTint="@color/red"
+        android:text="+"
+        android:textSize="40dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_subtrair"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_subtrair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:backgroundTint="@color/red"
+        android:text="-"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_adicionar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_multiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="*"
+        android:textSize="40dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_dividir"
+        app:layout_constraintStart_toStartOf="@+id/btn_adicionar" />
+
+    <Button
+        android:id="@+id/btn_dividir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:backgroundTint="@color/red"
+        android:text="/"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="@+id/btn_subtrair"
+        app:layout_constraintTop_toBottomOf="@+id/btn_subtrair" />
+
+    <TextView
+        android:id="@+id/tv_valor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:text="Valor 1:"
+        android:textColor="@color/red"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/et_valor1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_valor1" />
+
+    <TextView
+        android:id="@+id/tv_valor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:text="Valor 2:"
+        android:textColor="@color/red"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_valor2"
+        app:layout_constraintEnd_toStartOf="@+id/et_valor2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_mensagem_inicial_calculadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Calculadora"
+        android:textColor="@color/red"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_valor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="6dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_valor1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mensagem_inicial_calculadora" />
+
+    <EditText
+        android:id="@+id/et_valor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="6dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_valor2"
+        app:layout_constraintTop_toBottomOf="@+id/et_valor1" />
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="86dp"
+        android:text=""
+        android:textColor="@color/red"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_multiplicar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

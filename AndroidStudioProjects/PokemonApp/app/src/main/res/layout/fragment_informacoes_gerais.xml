@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformacoesGeraisFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#005b96">
+
+        <TextView
+            android:id="@+id/tv_nome_pokemon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:text="Nome"
+            android:textSize="30dp"
+            android:textColor="#FF0000"
+            app:layout_constraintBottom_toTopOf="@+id/tv_tipo_pokemon"
+            app:layout_constraintEnd_toEndOf="@+id/iv_pokemon"
+            app:layout_constraintStart_toStartOf="@+id/iv_pokemon"
+            app:layout_constraintTop_toBottomOf="@+id/iv_pokemon" />
+
+        <TextView
+            android:id="@+id/tv_tipo_pokemon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="30dp"
+            android:text="Tipo"
+            android:textSize="30dp"
+            android:textColor="#FF0000"
+            app:layout_constraintBottom_toTopOf="@+id/tv_descricao_pokemon"
+            app:layout_constraintEnd_toEndOf="@+id/tv_nome_pokemon"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nome_pokemon" />
+
+        <TextView
+            android:id="@+id/tv_descricao_pokemon"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="246dp"
+            android:text="Descrição"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tipo_pokemon" />
+
+        <ImageView
+            android:id="@+id/iv_pokemon"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="19dp"
+            android:src="@drawable/pikachu"
+            app:layout_constraintBottom_toTopOf="@+id/tv_nome_pokemon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

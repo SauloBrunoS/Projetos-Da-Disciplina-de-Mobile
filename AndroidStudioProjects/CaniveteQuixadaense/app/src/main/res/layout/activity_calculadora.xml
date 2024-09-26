@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Calculadora">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="43dp"
+        android:text="Canivete Quixadaense"
+        android:textColor="@color/red"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="33dp"
+        android:text="Calculadora Básica"
+        android:textColor="@color/red"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/et_valor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="6"
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/et_valor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="6"
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="@+id/et_valor1"
+        app:layout_constraintTop_toBottomOf="@+id/et_valor1" />
+
+    <Button
+        android:id="@+id/btn_somar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="+"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/et_valor2"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="@+id/et_valor2"
+        app:layout_constraintTop_toBottomOf="@+id/et_valor2" />
+
+    <Button
+        android:id="@+id/btn_subtrair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="33dp"
+        android:text="-"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_valor2" />
+
+    <Button
+        android:id="@+id/btn_multiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="*"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="@+id/btn_somar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_somar" />
+
+    <Button
+        android:id="@+id/btn_dividir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="/"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="@+id/btn_subtrair"
+        app:layout_constraintTop_toBottomOf="@+id/btn_subtrair" />
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="19dp"
+        android:text=""
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="@+id/btn_multiplicar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_multiplicar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

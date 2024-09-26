@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PokemonApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="pokemon_preferences_arquivo">pokemon_informacoes</string>
+</resources>
